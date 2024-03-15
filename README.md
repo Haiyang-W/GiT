@@ -70,8 +70,8 @@ Building a universal computation model across all tasks stands as the cornerston
 |  Model  |Params| Detection | Ins Seg| Sem Seg |Caption |Grounding |ckpt|log|config|
 |---------|---------|---------|--------|--------|---------|---------|---------|---------|---------|
 |  GiT-B<sub>multi-task</sub> | 131M|46.7 | 31.9 | 47.8 |35.3|85.8|[ckpt](https://huggingface.co/kanashi6/GiT/blob/main/multi_base.pth)|[log](https://huggingface.co/kanashi6/GiT/blob/main/multi_base.log)| [config](https://github.com/Haiyang-W/GiT/blob/main/configs/GiT/multi_fivetask_base.py) |
-|  GiT-L<sub>multi-task</sub> | 387M|50.8 | 34.0 | 50.4 |35.7|88.2|[ckpt](https://huggingface.co/kanashi6/GiT/blob/main/multi_large.pth)|[log](https://huggingface.co/kanashi6/GiT/blob/main/multi_large.log)| [config](https://github.com/Haiyang-W/GiT/blob/main/configs/GiT/multi_fivetask_large.py) |
-|  GiT-H<sub>multi-task</sub>| 756M|53.2 | 35.9 | 53.1|36.8|89.2|[ckpt](https://huggingface.co/kanashi6/GiT/blob/main/multi_huge.pth)|[log](https://huggingface.co/kanashi6/GiT/blob/main/multi_huge.log)| [config](https://github.com/Haiyang-W/GiT/blob/main/configs/GiT/multi_fivetask_huge.py) |
+|  GiT-L<sub>multi-task</sub> | 387M|51.3 | 35.1 | 50.6|35.7|88.4|[ckpt](https://huggingface.co/kanashi6/GiT/blob/main/multi_large.pth)|[log](https://huggingface.co/kanashi6/GiT/blob/main/multi_large.log)| [config](https://github.com/Haiyang-W/GiT/blob/main/configs/GiT/multi_fivetask_large.py) |
+|  GiT-H<sub>multi-task</sub>| 756M|52.9 | 35.8 | 52.4|36.2|89.2|[ckpt](https://huggingface.co/kanashi6/GiT/blob/main/multi_huge.pth)|[log](https://huggingface.co/kanashi6/GiT/blob/main/multi_huge.log)| [config](https://github.com/Haiyang-W/GiT/blob/main/configs/GiT/multi_fivetask_huge.py) |
 <!-- |  GiT-B<sub>single-task</sub> | 131M|45.1 | 31.4| 47.7 |33.7|83.3|[ckpt](https://huggingface.co/kanashi6/GiT/blob/main/det_base.pth)|[log](https://huggingface.co/kanashi6/GiT/blob/main/det_base.log)| [config](https://github.com/Haiyang-W/GiT/blob/main/configs/GiT/single_detection_base.py)| -->
 ### Task Synergy in Multi-Tasking Training
 |  Model  |Params| Detection | Ins Seg| Sem Seg |Caption |Grounding |
