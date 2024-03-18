@@ -22,6 +22,7 @@ This repo is the official implementation of paper: [GiT: Towards Generalist Visi
 > - Primary contact: Haiyang Wang ( wanghaiyang6@stu.pku.edu.cn ), Hao Tang ( tanghao@stu.pku.edu.cn )
 
 ## Overview
+- [💫 What we want to do](https://github.com/Haiyang-W/GiT?tab=readme-ov-file#-what-we-want-to-do)
 - [🤔 Introduction](https://github.com/Haiyang-W/GiT?tab=readme-ov-file#-introduction)
 - [👀 Todo](https://github.com/Haiyang-W/GiT?tab=readme-ov-file#-todo)
 - [🚀 Main Results](https://github.com/Haiyang-W/GiT?tab=readme-ov-file#-main-results)
@@ -29,12 +30,15 @@ This repo is the official implementation of paper: [GiT: Towards Generalist Visi
 - [👍 Acknowledgments](https://github.com/Haiyang-W/GiT?tab=readme-ov-file#-acknowledgement)
 - [📘 Citation](https://github.com/Haiyang-W/GiT?tab=readme-ov-file#-citation)
 
+## 💫 What we want to do
+We aim to unify the model architecture of vision and language through a plain transformer, **reducing human biases** such as modality-specific encoders and task-specific heads.  A key advancement in deep learning is the shift from hand-crafted to autonomously learned features, inspiring us to reduce human-designed aspects in architecture. Moreover, benefiting from the flexibility of plain transformers, our framework can extend to more modalities like [point clouds](https://github.com/Haiyang-W/UniTR) and graphs.
+
 ## 🤔 Introduction
 Building a universal computation model across all tasks stands as the cornerstone of artificial intelligence, reducing the need for task-specific designs. In this project, we introduce GiT (**G**eneralist V**i**sion **T**ransformer). GiT has the following characteristics: 
  - 😮 **Minimalist architecture design similar to LLM**: GiT consists solely of a single transformer, without the inclusion of additional vision encoders and adapters.
  - 🚀 **Covering all types of visual understanding tasks**: GiT addresses a spectrum of visual tasks, including object-level tasks (e.g., object detection), pixel-level tasks (e.g., semantic segmentation), and vision-language tasks (e.g., image captioning).
  - 🤗 **Achieving multi-task ability by unified language interface**: Similar to LLM, GiT observes the task synergy effect in multi-task training. It fosters mutual enhancement across tasks, leading to significant improvements compared to isolated training.
- - 🔥 **Stong performance on zero-shot and few-shot benchmark**: GiT scales well with model size and data, demonstrating remarkable generalizability across diverse scenarios after training on 27 datasets.
+ - 🔥 **Strong performance on zero-shot and few-shot benchmark**: GiT scales well with model size and data, demonstrating remarkable generalizability across diverse scenarios after training on 27 datasets.
 
 
 <div align="center">
