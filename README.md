@@ -34,7 +34,7 @@ Building a universal computation model across all tasks stands as the cornerston
  - 😮 **Minimalist architecture design similar to LLM**: GiT consists solely of a single transformer, without the inclusion of additional vision encoders and adapters.
  - 🚀 **Covering all types of visual understanding tasks**: GiT addresses a spectrum of visual tasks, including object-level tasks (e.g., object detection), pixel-level tasks (e.g., semantic segmentation), and vision-language tasks (e.g., image captioning).
  - 🤗 **Achieving multi-task ability by unified language interface**: Similar to LLM, GiT observes the task synergy effect in multi-task training. It fosters mutual enhancement across tasks, leading to significant improvements compared to isolated training.
- - 🔥 **Stong performance on zero-shot and few-shot benchmark**: GiT scales well with model size and data, demonstrating remarkable generalizability across diverse scenarios after training on 27 datasets.
+ - 🔥 **Strong performance on zero-shot and few-shot benchmark**: GiT scales well with model size and data, demonstrating remarkable generalizability across diverse scenarios after training on 27 datasets.
 
 
 <div align="center">
