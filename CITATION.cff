@@ -1,8 +1,6 @@
-cff-version: 1.2.0
-message: "If you use this software, please cite it as below."
-authors:
-  - name: "MMDetection Contributors"
-title: "OpenMMLab Detection Toolbox and Benchmark"
-date-released: 2018-08-22
-url: "https://github.com/open-mmlab/mmdetection"
-license: Apache-2.0
+@article{wang2024git,
+  title={GiT: Towards Generalist Vision Transformer through Universal Language Interface},
+  author={Wang, Haiyang and Tang, Hao and Jiang, Li and Shi, Shaoshuai and Naeem, Muhammad Ferjad and Li, Hongsheng and Schiele, Bernt and Wang, Liwei},
+  journal={arXiv preprint arXiv:2403.09394},
+  year={2024}
+}
