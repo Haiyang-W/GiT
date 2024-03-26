@@ -119,6 +119,9 @@ cd GiT
 pip install -v -e .
 pip install -r requirements/optional.txt
 pip install -r requirements/runtime.txt
+
+# if you face ChildFailedError, please update yapf
+pip install yapf==0.40.1
 ```
 - Please download pretrained text embedding from [huggingface](https://huggingface.co/kanashi6/GiT/tree/main) and organize the downloaded files as follows:
 ```
