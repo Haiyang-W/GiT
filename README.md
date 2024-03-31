@@ -22,7 +22,7 @@ This repo is the official implementation of paper: [GiT: Towards Generalist Visi
 > - Primary contact: Haiyang Wang ( wanghaiyang6@stu.pku.edu.cn ), Hao Tang ( tanghao@stu.pku.edu.cn )
 
 ## Overview
-- [💫 What we want to do](https://github.com/Haiyang-W/GiT?tab=readme-ov-file#-what-we-want-to-do)
+- [💫 What we want to do](https://github.com/Haiyang-W/GiT?tab=readme-ov-file#-what-we-want-to-do:-Reducing-Human-Bias-in-Model-Architecture)
 - [🤔 Introduction](https://github.com/Haiyang-W/GiT?tab=readme-ov-file#-introduction)
 - [👀 Todo](https://github.com/Haiyang-W/GiT?tab=readme-ov-file#-todo)
 - [🚀 Main Results](https://github.com/Haiyang-W/GiT?tab=readme-ov-file#-main-results)
@@ -30,7 +30,7 @@ This repo is the official implementation of paper: [GiT: Towards Generalist Visi
 - [👍 Acknowledgments](https://github.com/Haiyang-W/GiT?tab=readme-ov-file#-acknowledgement)
 - [📘 Citation](https://github.com/Haiyang-W/GiT?tab=readme-ov-file#-citation)
 
-## 💫 What we want to do
+## 💫 What we want to do: **Reducing Human Bias in Model Architecture**
 We aim to unify the model architecture of vision and language through a plain transformer, **reducing human biases** such as modality-specific encoders and task-specific heads.  A key advancement in deep learning is the shift from hand-crafted to autonomously learned features, inspiring us to reduce human-designed aspects in architecture. Moreover, benefiting from the flexibility of plain transformers, our framework can extend to more modalities like [point clouds](https://github.com/Haiyang-W/UniTR) and graphs.
 
 ## 🤔 Introduction
@@ -58,6 +58,7 @@ Building a universal computation model across all tasks stands as the cornerston
 - [x] Clean up and release the training code.
 - [ ] Engineering Optimization (faster).
 - [ ] Joint Training including Language (stronger).
+- [ ] Code Refactoring (now is also a little dirty, sorry for that).
 
 ## 🚀 Main Results
 
