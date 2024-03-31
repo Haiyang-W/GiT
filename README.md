@@ -31,7 +31,7 @@ This repo is the official implementation of paper: [GiT: Towards Generalist Visi
 - [📘 Citation](https://github.com/Haiyang-W/GiT?tab=readme-ov-file#-citation)
 
 ## 💫 What we want to do
-### Reducing Human Bias in Model Architecture Desiging
+### Reducing Human Bias in Model Architecture Designing
 
 We aim to unify the model architecture of vision and language through a plain transformer, **reducing human biases** such as modality-specific encoders and task-specific heads.  A key advancement in deep learning is the shift from hand-crafted to autonomously learned features, inspiring us to reduce human-designed aspects in architecture. Moreover, benefiting from the flexibility of plain transformers, our framework can extend to more modalities like [point clouds](https://github.com/Haiyang-W/UniTR) and graphs.
 
