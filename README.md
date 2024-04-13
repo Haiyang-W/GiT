@@ -12,7 +12,7 @@
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FHaiyang-W%2FGiT%2Ftree%2Fmain&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 [![GitHub issues](https://img.shields.io/github/issues/Haiyang-W/GiT?color=critical&label=Issues)](https://github.com/Haiyang-W/GiT/issues?q=is%3Aopen+is%3Aissue)
 [![GitHub closed issues](https://img.shields.io/github/issues-closed/Haiyang-W/GiT?color=success&label=Issues)](https://github.com/Haiyang-W/GiT/issues?q=is%3Aissue+is%3Aclosed)  
-[![Twitter](https://img.shields.io/badge/Twitter-🔥%2020k%2B120k%20views-b31b1b.svg?style=social&logo=twitter)](https://twitter.com/_akhaliq/status/1768484390873477480) <br>
+[![Twitter](https://img.shields.io/badge/Twitter-🔥%2036k%20views-b31b1b.svg?style=social&logo=twitter)](https://twitter.com/_akhaliq/status/1768484390873477480) <br>
 </h5>
 
 This repo is the official implementation of paper: [GiT: Towards Generalist Vision Transformer through Universal Language Interface](https://arxiv.org/abs/2403.09394) as well as the follow-ups. We have made every effort to ensure that the codebase is clean, concise, easily readable, state-of-the-art, and relies only on minimal dependencies.
