@@ -64,3 +64,53 @@ model = dict(
 
 test_cfg = dict(type='TestLoop')
 val_cfg = dict(type='ValLoop')
+
+# optimizer
+optim_wrapper = dict(
+    type='OptimWrapper',
+    optimizer=dict(type='AdamW', lr=0.0002, weight_decay=0.05),
+    clip_grad=dict(max_norm=0.1, norm_type=2),
+    paramwise_cfg=dict(
+        custom_keys={
+            'backbone': dict(lr_mult=0.1),
+            'backbone.layers.0': dict(lr_mult=0.1),
+            'backbone.layers.1': dict(lr_mult=0.1),
+            'backbone.layers.2': dict(lr_mult=0.1),
+            'backbone.layers.3': dict(lr_mult=0.1),
+            'backbone.layers.4': dict(lr_mult=0.1),
+            'backbone.layers.5': dict(lr_mult=0.1),
+            'backbone.layers.6': dict(lr_mult=0.1),
+            'backbone.layers.7': dict(lr_mult=0.1),
+            'backbone.layers.8': dict(lr_mult=0.1),
+            'backbone.layers.9': dict(lr_mult=0.1),
+            'backbone.layers.10': dict(lr_mult=0.1),
+            'backbone.layers.11': dict(lr_mult=0.1),
+            'backbone.layers.12': dict(lr_mult=0.1),
+            'backbone.layers.13': dict(lr_mult=0.1),
+            'backbone.layers.14': dict(lr_mult=0.1),
+            'backbone.layers.15': dict(lr_mult=0.1),
+            'backbone.layers.16': dict(lr_mult=0.1),
+            'backbone.layers.17': dict(lr_mult=0.15625),
+            'backbone.layers.18': dict(lr_mult=0.2125),
+            'backbone.layers.19': dict(lr_mult=0.26875),
+            'backbone.layers.20': dict(lr_mult=0.325),
+            'backbone.layers.21': dict(lr_mult=0.38125),
+            'backbone.layers.22': dict(lr_mult=0.4375),
+            'backbone.layers.23': dict(lr_mult=0.49375),
+            'backbone.layers.24': dict(lr_mult=0.55),
+            'backbone.layers.25': dict(lr_mult=0.60625),
+            'backbone.layers.26': dict(lr_mult=0.6625),
+            'backbone.layers.27': dict(lr_mult=0.71875),
+            'backbone.layers.28': dict(lr_mult=0.7750),
+            'backbone.layers.29': dict(lr_mult=0.83125),
+            'backbone.layers.30': dict(lr_mult=0.8875),
+            'backbone.layers.31': dict(lr_mult=0.94375),
+            'backbone.layers.32': dict(lr_mult=1.0),
+            'backbone.layers.33': dict(lr_mult=1.0),
+            'backbone.layers.34': dict(lr_mult=1.0),
+            'backbone.layers.35': dict(lr_mult=1.0),
+            'backbone.layers.36': dict(lr_mult=1.0),
+            'backbone.layers.37': dict(lr_mult=1.0),
+            'sampling_offsets': dict(lr_mult=0.1),
+            'reference_points': dict(lr_mult=0.1)
+        }))

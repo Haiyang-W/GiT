@@ -63,3 +63,27 @@ model = dict(
 
 test_cfg = dict(type='TestLoop')
 val_cfg = dict(type='ValLoop')
+
+optim_wrapper = dict(
+    type='OptimWrapper',
+    optimizer=dict(type='AdamW', lr=0.0002, weight_decay=0.05),
+    clip_grad=dict(max_norm=0.1, norm_type=2),
+    paramwise_cfg=dict(
+        custom_keys={
+            'backbone': dict(lr_mult=0.1),
+            'backbone.layers.6': dict(lr_mult=0.2286),
+            'backbone.layers.7': dict(lr_mult=0.3571),
+            'backbone.layers.8': dict(lr_mult=0.4858),
+            'backbone.layers.9': dict(lr_mult=0.6143),
+            'backbone.layers.10': dict(lr_mult=0.7429),
+            'backbone.layers.11': dict(lr_mult=0.8714),
+            'backbone.layers.12': dict(lr_mult=1.0),
+            'backbone.layers.13': dict(lr_mult=1.0),
+            'backbone.layers.14': dict(lr_mult=1.0),
+            'backbone.layers.15': dict(lr_mult=1.0),
+            'backbone.layers.16': dict(lr_mult=1.0),
+            'backbone.layers.17': dict(lr_mult=1.0),
+            'sampling_offsets': dict(lr_mult=0.1),
+            'reference_points': dict(lr_mult=0.1)
+        })
+)
