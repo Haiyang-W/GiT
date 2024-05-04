@@ -667,12 +667,12 @@ python ./tools/dataset_converters/crowdhuman2coco.py -i ./data/crowdhuman -o ./d
 
 # Few-Shot Dataset
 ## DRIVE
-The training and validation set of DRIVE could be download from [here](https://drive.grand-challenge.org/). Before that, you should register an account. Currently '1st_manual' is not provided officially.
+The training and validation set of DRIVE could be download from [kaggle](https://www.kaggle.com/datasets/linjianhua/drivedataset/data?select=DRIVE).
 
 To convert DRIVE dataset to MMSegmentation format, you should run the following command:
 
 ```shell
-python tools/dataset_converters/drive.py /path/to/training.zip /path/to/test.zip
+python tools/dataset_converters/drive.py /path/to/DRIVE
 ```
 
 The script will make directory structure automatically.
@@ -706,7 +706,7 @@ The [Potsdam](https://www.isprs.org/education/benchmarks/UrbanSemLab/2d-sem-labe
 
 The dataset can be requested at the challenge [homepage](https://www.isprs.org/education/benchmarks/UrbanSemLab/default.aspx).
 Or download on [BaiduNetdisk](https://pan.baidu.com/s/1K-cLVZnd1X7d8c26FQ-nGg?pwd=mseg)，password：mseg, [Google Drive](https://drive.google.com/drive/folders/1w3EJuyUGet6_qmLwGAWZ9vw5ogeG0zLz?usp=sharing) and [OpenDataLab](https://opendatalab.com/ISPRS_Potsdam/download).
-The '2_Ortho_RGB.zip' and '5_Labels_all_noBoundary.zip' are required.
+The '2_Ortho_RGB.zip' and '5_Labels_all_noBoundary.zip' are required. Create a folder containing these two zip files.
 
 For Potsdam dataset, please run the following command to re-organize the dataset.
 
@@ -723,9 +723,36 @@ You should move the annotation files from `WIDER_train_annotations` and `WIDER_v
 to the `Annotation` folders inside the corresponding directories `WIDER_train` and `WIDER_val`.
 Also annotation lists `val.txt` and `train.txt` should be copied to `data/WIDERFace` from `WIDER_train_annotations` and `WIDER_val_annotations`.
 ## DeepFashion
-download data from https://drive.google.com/drive/folders/0B7EVK8r0v71pVDZFQXRsMDZCX1E?usp=sharing
+[MMFashion](https://github.com/open-mmlab/mmfashion) develops "fashion parsing and segmentation" module
+based on the dataset
+[DeepFashion-Inshop](https://drive.google.com/drive/folders/0B7EVK8r0v71pVDZFQXRsMDZCX1E?usp=sharing).
+Its annotation follows COCO style.
+To use it, you need to first download the data. Note that we only use "img_highres" in this task.
+The file tree should be like this:
 
-The image zip file passwords are listed as follows:
-  - In-shop Clothes Retrieval Benchmark: mmlab_DeepFashion_inshop
-  - Consumer-to-shop Clothes Retrieval Benchmark: mmlab_DeepFashion_consumer2shop
-  - Fashion Synthesis Benchmark: mmlab_DeepFashion_fashionsynth
+```sh
+mmdetection
+├── mmdet
+├── tools
+├── configs
+├── data
+│   ├── DeepFashion
+│   │   ├── In-shop
+|   │   │   ├── Anno
+|   │   │   │   ├── segmentation
+|   │   │   │   |   ├── DeepFashion_segmentation_train.json
+|   │   │   │   |   ├── DeepFashion_segmentation_query.json
+|   │   │   │   |   ├── DeepFashion_segmentation_gallery.json
+|   │   │   │   ├── list_bbox_inshop.txt
+|   │   │   │   ├── list_description_inshop.json
+|   │   │   │   ├── list_item_inshop.txt
+|   │   │   │   └── list_landmarks_inshop.txt
+|   │   │   ├── Eval
+|   │   │   │   └── list_eval_partition.txt
+|   │   │   ├── Img
+|   │   │   │   ├── img
+|   │   │   │   │   ├──XXX.jpg
+|   │   │   │   ├── img_highres
+|   │   │   │   └── ├──XXX.jpg
+
+```
