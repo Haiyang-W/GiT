@@ -49,6 +49,7 @@ Building a universal computation model across all tasks stands as the cornerston
 </div>
 
 ## 📣 News
+- [24-7-01] 🤗 Our GiT was accepted by ECCV2024.
 - [24-3-15] 🚀 Training and inference Code is released.
 - [24-3-15] 👀 GiT is released on [arXiv](https://arxiv.org/abs/2403.09394).
 
