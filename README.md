@@ -15,7 +15,7 @@
 [![Twitter](https://img.shields.io/badge/Twitter-🔥%2036k%20views-b31b1b.svg?style=social&logo=twitter)](https://twitter.com/_akhaliq/status/1768484390873477480) <br>
 </h5>
 
-This repo is the official implementation of ECCV2024 paper: [GiT: Towards Generalist Vision Transformer through Universal Language Interface](https://arxiv.org/abs/2403.09394) as well as the follow-ups. We have made every effort to ensure that the codebase is clean, concise, easily readable, state-of-the-art, and relies only on minimal dependencies.
+This repo is the official implementation of [**ECCV2024**](https://eccv.ecva.net/) paper: [GiT: Towards Generalist Vision Transformer through Universal Language Interface](https://arxiv.org/abs/2403.09394) as well as the follow-ups. We have made every effort to ensure that the codebase is clean, concise, easily readable, state-of-the-art, and relies only on minimal dependencies.
 
 > GiT: Towards Generalist Vision Transformer through Universal Language Interface
 >
@@ -49,7 +49,7 @@ Building a universal computation model across all tasks stands as the cornerston
 </div>
 
 ## 📣 News
-- [24-7-01] 🤗 Our GiT was accepted by ECCV2024.
+- [24-7-01] 🤗 Our GiT was accepted by [ECCV2024](https://eccv.ecva.net/).
 - [24-3-15] 🚀 Training and inference Code is released.
 - [24-3-15] 👀 GiT is released on [arXiv](https://arxiv.org/abs/2403.09394).
 
