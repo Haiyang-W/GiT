@@ -33,11 +33,11 @@ This repo is the official implementation of [**ECCV2024**](https://eccv.ecva.net
 
 ## 💫 What we want to do
 ### The Model Architectures across various AI domains are converging towards <font color=Red>*Multi-Layer Plain Transformers*</font>. 
-- Language Modeling ([GPT](https://arxiv.org/abs/2005.14165))
-- Image Modeling ([ViT](https://arxiv.org/abs/2010.11929))
-- Point Cloud Modeling ([DSVT](https://openaccess.thecvf.com/content/CVPR2023/papers/Wang_DSVT_Dynamic_Sparse_Voxel_Transformer_With_Rotated_Sets_CVPR_2023_paper.pdf))
-- Image and Point Cloud Modeling ([UniTR](https://arxiv.org/pdf/2308.07732))
-- Graph Modeling ([Graphormer](https://proceedings.neurips.cc/paper/2021/file/f1c1592588411002af340cbaedd6fc33-Paper.pdf))
+- *Language Modeling* ([GPT](https://arxiv.org/abs/2005.14165))
+- *2D Image Modeling* ([ViT](https://arxiv.org/abs/2010.11929))
+- *3D Point Cloud Modeling* ([DSVT](https://openaccess.thecvf.com/content/CVPR2023/papers/Wang_DSVT_Dynamic_Sparse_Voxel_Transformer_With_Rotated_Sets_CVPR_2023_paper.pdf))
+- *2D Image and 3D Point Cloud Joint Modeling* ([UniTR](https://arxiv.org/pdf/2308.07732))
+- *Graph Modeling* ([Graphormer](https://proceedings.neurips.cc/paper/2021/file/f1c1592588411002af340cbaedd6fc33-Paper.pdf))
 - $\cdot \cdot \cdot$
 ### Reducing Human Bias in Model Architecture Designing
 
@@ -46,9 +46,9 @@ We aim to unify the model architecture of vision and language through a plain tr
 ## Overview
 - [💫 What we want to do](https://github.com/Haiyang-W/GiT?tab=readme-ov-file#-what-we-want-to-do)
 - [🤔 Introduction](https://github.com/Haiyang-W/GiT?tab=readme-ov-file#-introduction)
-- [👀 Todo](https://github.com/Haiyang-W/GiT?tab=readme-ov-file#-todo)
 - [🚀 Main Results](https://github.com/Haiyang-W/GiT?tab=readme-ov-file#-main-results)
 - [🛠️ Quick Start](https://github.com/Haiyang-W/GiT?tab=readme-ov-file#%EF%B8%8F-quick-start)
+- [👀 Todo](https://github.com/Haiyang-W/GiT?tab=readme-ov-file#-todo)
 - [👍 Acknowledgments](https://github.com/Haiyang-W/GiT?tab=readme-ov-file#-acknowledgement)
 - [📘 Citation](https://github.com/Haiyang-W/GiT?tab=readme-ov-file#-citation)
 
@@ -58,17 +58,6 @@ Building a universal computation model across all tasks stands as the cornerston
  - 🚀 **Covering all types of visual understanding tasks**: GiT addresses a spectrum of visual tasks, including object-level tasks (e.g., object detection), pixel-level tasks (e.g., semantic segmentation), and vision-language tasks (e.g., image captioning).
  - 🤗 **Achieving multi-task ability by unified language interface**: Similar to LLM, GiT observes the task synergy effect in multi-task training. It fosters mutual enhancement across tasks, leading to significant improvements compared to isolated training.
  - 🔥 **Strong performance on zero-shot and few-shot benchmark**: GiT scales well with model size and data, demonstrating remarkable generalizability across diverse scenarios after training on 27 datasets.
-
-## 👀 Todo
-
-- [x] Release the [arXiv](https://arxiv.org/abs/2403.09394) version.
-- [x] SOTA performance of generalist model on multi-tasking benchmark.
-- [x] SOTA performance of generalist model on zero- and few-shot benchmark.
-- [x] Clean up and release the inference code.
-- [x] Clean up and release the training code.
-- [ ] Engineering Optimization (faster).
-- [ ] Joint Training including Language (stronger).
-- [ ] Code Refactoring (now is also a little dirty, sorry for that).
 
 ## 🚀 Main Results
 
@@ -260,6 +249,17 @@ If you want to use GiT on your own dataset, please refer [here](https://github.c
 
 ### 🚀 Lightweight Version
 If your GPU memory is insufficient, you can reduce the resolution like [here](https://github.com/Haiyang-W/GiT/blob/main/configs/GiT/single_detection_base_672.py), where we lower the detection resolution to 672. It requires ~20 hours of training and reaches ~41.5 mAP.
+
+## 👀 Todo
+
+- [x] Release the [arXiv](https://arxiv.org/abs/2403.09394) version.
+- [x] SOTA performance of generalist model on multi-tasking benchmark.
+- [x] SOTA performance of generalist model on zero- and few-shot benchmark.
+- [x] Clean up and release the inference code.
+- [x] Clean up and release the training code.
+- [ ] Engineering Optimization (faster).
+- [ ] Joint Training including Language (stronger).
+- [ ] Code Refactoring (now is also a little dirty, sorry for that).
 
 ## 👍 Acknowledgement
 * [MMDetection](https://github.com/open-mmlab/mmdetection) The codebase we built upon. Thanks for providing such a convenient framework.
