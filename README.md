@@ -32,6 +32,13 @@ This repo is the official implementation of [**ECCV2024**](https://eccv.ecva.net
 - [📘 Citation](https://github.com/Haiyang-W/GiT?tab=readme-ov-file#-citation)
 
 ## 💫 What we want to do
+### The Model Architectures across various AI domains are converging towards <font color=Red>*Multi-Layer Plain Transformers*</font>. 
+- Language Modeling ([GPT](https://arxiv.org/abs/2005.14165))
+- Image Modeling ([ViT](https://arxiv.org/abs/2010.11929))
+- Point Cloud Modeling ([DSVT](https://openaccess.thecvf.com/content/CVPR2023/papers/Wang_DSVT_Dynamic_Sparse_Voxel_Transformer_With_Rotated_Sets_CVPR_2023_paper.pdf))
+- Image and Point Cloud Modeling ([UniTR](https://arxiv.org/pdf/2308.07732))
+- Graph Modeling ([Graphormer](https://proceedings.neurips.cc/paper/2021/file/f1c1592588411002af340cbaedd6fc33-Paper.pdf))
+- $\cdot \cdot \cdot$
 ### Reducing Human Bias in Model Architecture Designing
 
 We aim to unify the model architecture of vision and language through a plain transformer, **reducing human biases** such as modality-specific encoders and task-specific heads.  A key advancement in deep learning is the shift from hand-crafted to autonomously learned features, inspiring us to reduce human-designed aspects in architecture. Moreover, benefiting from the flexibility of plain transformers, our framework can extend to more modalities like [point clouds](https://github.com/Haiyang-W/UniTR) and graphs.
