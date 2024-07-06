@@ -1,4 +1,4 @@
-# 💥 GiT: the first successful LLM-like general vision model unifies various vision tasks only with a vanilla ViT
+# GiT: the first GPT-style general vision model unifies various vision tasks only with a vanilla ViT and simple one-stage training strategy
 <h5 align="center">
 <!-- [![hf_space](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/spaces/LanguageBind/GiT)
 [![Replicate demo and cloud API](https://replicate.com/camenduru/GiT/badge)](https://replicate.com/camenduru/GiT)
@@ -58,6 +58,7 @@ Building a universal computation model across all tasks stands as the cornerston
  - 🚀 **Covering all types of visual understanding tasks**: GiT addresses a spectrum of visual tasks, including object-level tasks (e.g., object detection), pixel-level tasks (e.g., semantic segmentation), and vision-language tasks (e.g., image captioning).
  - 🤗 **Achieving multi-task ability by unified language interface**: Similar to LLM, GiT observes the task synergy effect in multi-task training. It fosters mutual enhancement across tasks, leading to significant improvements compared to isolated training.
  - 🔥 **Strong performance on zero-shot and few-shot benchmark**: GiT scales well with model size and data, demonstrating remarkable generalizability across diverse scenarios after training on 27 datasets.
+ - 👍 **Simple one-stage training strategy**: GiT uses a very simple one-stage training strategy, fully embracing the training style utilized by the current LLM framework.
 
 ## 🚀 Main Results
 
