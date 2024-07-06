@@ -1,4 +1,4 @@
-# the first GPT-style general vision model unifies various vision tasks only with a vanilla ViT. No negative transfer.
+# The first GPT-style general vision model unifies various vision tasks only with a vanilla ViT. No negative transfer.
 <h5 align="center">
 <!-- [![hf_space](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/spaces/LanguageBind/GiT)
 [![Replicate demo and cloud API](https://replicate.com/camenduru/GiT/badge)](https://replicate.com/camenduru/GiT)
