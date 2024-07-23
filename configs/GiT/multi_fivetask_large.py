@@ -49,7 +49,7 @@ grounding_cfgs = dict(
     global_only_image=False)
 
 model = dict(
-    type='Git',
+    type='GiT',
     support_tasks=['detection', 'semantic_segmentation', 'instance_segmentation', 'caption', 'grounding'],
     use_checkpoints=True,
     tokenizer=dict(type='BlipTokenizer', name_or_path='bert-base-uncased'),
@@ -63,7 +63,7 @@ model = dict(
         seg_pad_value=255,
         pad_size_divisor=224),
     backbone=dict(
-        type='ViTGit',
+        type='ViTGiT',
         arch='large',
         img_size=base_img_size,
         patch_size=16,
@@ -79,7 +79,7 @@ model = dict(
         init_cfg=dict(type='Pretrained', checkpoint=pretrained, prefix='backbone.'),),
     head_list=dict(
         # non parametric task-specific heads
-        detection_head=dict(type='GitDetHead',
+        detection_head=dict(type='GiTDetHead',
             train_cfg=dict(
                 assigner=dict(
                     type='HungarianAssigner',
@@ -87,7 +87,7 @@ model = dict(
                         dict(type='PointsL1Cost', weight=5.0, box_format='xywh'),
                     ])),
             test_cfg=dict(max_per_img=100)),
-        instance_segmentation_head=dict(type='GitInsSegHead',
+        instance_segmentation_head=dict(type='GiTInsSegHead',
             train_cfg=dict(
                 assigner=dict(
                     type='HungarianAssigner',
@@ -95,9 +95,9 @@ model = dict(
                         dict(type='PointsL1Cost', weight=5.0, box_format='xywh'),
                     ])),
             test_cfg=dict(max_per_img=100)),
-        semantic_segmentation_head=dict(type='GitSemSegHead'),
-        caption_head=dict(type='GitCaptionHead'),
-        grounding_head=dict(type='GitGroundingHead')),)
+        semantic_segmentation_head=dict(type='GiTSemSegHead'),
+        caption_head=dict(type='GiTCaptionHead'),
+        grounding_head=dict(type='GiTGroundingHead')),)
 
 # train_pipeline, NOTE the img_scale and the Pad's size_divisor is different
 ## pipeline for detection
