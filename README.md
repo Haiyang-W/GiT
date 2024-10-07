@@ -270,10 +270,10 @@ If your GPU memory is insufficient, you can reduce the resolution like [here](ht
 Please consider citing our work as follows if it is helpful.
 ```
 @inproceedings{wang2024git,
-    title={GiT: Towards Generalist Vision Transformer through Universal Language Interface},
-    author={Haiyang Wang and Hao Tang and Li Jiang and Shaoshuai Shi and Muhammad Ferjad Naeem and Hongsheng Li and Bernt Schiele and Liwei Wang},
-    booktitle={ECCV},
-    year={2024}
+  title={GiT: Towards Generalist Vision Transformer through Universal Language Interface},
+  author={Wang, Haiyang and Tang, Hao and Jiang, Li and Shi, Shaoshuai and Naeem, Muhammad Ferjad and Li, Hongsheng and Schiele, Bernt and Wang, Liwei},
+  booktitle={ECCV},
+  year={2024}
 }
 ```
 
