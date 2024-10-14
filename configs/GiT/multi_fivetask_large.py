@@ -87,7 +87,7 @@ model = dict(
                         dict(type='PointsL1Cost', weight=5.0, box_format='xywh'),
                     ])),
             test_cfg=dict(max_per_img=100)),
-        instance_segmentation_head=dict(type='GitInsSegHead',
+        instance_segmentation_head=dict(type='GiTInsSegHead',
             train_cfg=dict(
                 assigner=dict(
                     type='HungarianAssigner',
